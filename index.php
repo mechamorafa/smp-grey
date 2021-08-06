@@ -13,9 +13,9 @@
 <?php wp_body_open(); ?>
 
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Start header
-	/*-----------------------------------------------------------------------------------*/
+	/*
+		Start header
+	*/
 ?>
 
 <header id="masthead" class="site-header" role="banner">
@@ -27,18 +27,18 @@
 				$admin_email = get_option('admin_email');
 				echo get_avatar( $admin_email, 100 ); 
 			?>
-		</div><!--/ author -->
+		</div>
 		
 		<div id="brand">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a> &mdash; <span><?php echo esc_html( get_bloginfo( 'description' ) ); ?></span></h1>
-		</div><!-- /brand -->
+		</div>
 	
 		<nav role="navigation" class="site-navigation main-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- .site-navigation .main-navigation -->
 		
 		<div class="clear"></div>
-	</div><!--/container -->
+	</div>
 		
 </header><!-- #masthead .site-header -->
 
@@ -49,9 +49,9 @@
 
 
 <?php
-	/*-----------------------------------------------------------------------------------*/
-	/* Start Home loop
-	/*-----------------------------------------------------------------------------------*/
+	/*
+	 Start Home loop
+	*/
 	
 	if( is_home() || is_archive() ) {
 	
